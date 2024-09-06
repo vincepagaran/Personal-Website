@@ -40,3 +40,15 @@ let intro = document.querySelector('.intro')
       },2300);
     })
   })
+  function openModal(imgElement) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("modalImage");
+        modal.style.display = "block";
+        modalImg.src = imgElement.src;
+    }
+
+    // Function to close modal
+    function closeModal() {
+        var modal = document.getElementById("imageModal");
+        modal.style.display = "none";
+    }
